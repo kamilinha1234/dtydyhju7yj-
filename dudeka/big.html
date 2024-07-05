@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
++<body>
+    <h1> usando o  DOM em um arquivo HTML </h1>
+    <script>
+        var saida = document.querySelector("#saida ");
+        var mensagem ="";
+        for(var i = 1 ; i<=1000; i++){
+            mensagem = mensagem + "i:"+ i +"<br>";
+        }
+
+        saida.innerHTML = mensagem;
+    </script>
+</body>
+</html>
