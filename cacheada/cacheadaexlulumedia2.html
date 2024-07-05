@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: blueviolet;
+        font-size: 50px;
+    }
+    button{
+        background-color: aqua;
+        color: white;
+    }
+    button :hover{
+        background-color: black;
+        color: green;
+        box-shadow: 0 0 50px 25px black;
+        transition: 0.5s;
+    }
+    </style>
+    </head>
+<body>
+    <script>
+        $n = GET["nome"];
+        $sn = GET["sobrenome"];
+        $n1 = REQUEST["nota1"];
+        $nota2 = REQUEST["nota2"];
+        $media = ($n1 + $n2) / 2;
+        if($media >= 60)
+        {
+         $sit = "aprovado";
+        }
+        else
+        {
+            if ($media <=59)
+             $sit = "reprovado";
+        }
+        echo "a media de $nota1 $nota2 foi de $media e voce foi $sit"
+    </script>
+    <button onclick="javascript:history.go(-1)">volte para o formulario</button>
+</body>
+</html>

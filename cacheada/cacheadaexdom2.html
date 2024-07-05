@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>mostrar 1000 números</title>
+</body>
+    <h1>usando o DOM em arquivo HTML</h1>
+    <div id="saida"></div>
+
+    <script>
+        var saida = document.querySelector("#saida");
+       var mensagem = "";/*variavel mensagem nao tem nada nela */
+
+       for(var i  = 1; i<1000; i++){
+        mensagem = mensagem + "i:" + i + "<br>";
+       }
+       saida.innerHTML = mensagem;
+
+       </script>
+       </html>

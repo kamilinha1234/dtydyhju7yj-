@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Notas e faltas</h1>
+    <script>
+        //pedir nota 1
+        nota1 = parseFloat(prompt("digite a nota do 1º semestre"));
+
+        //pedir faltas do 1 semestre
+        faltas1 = parseFloat(prompt("digite a número do 1º semestre"));
+
+        //pedir nota 2
+        nota2 = parseFloat(prompt("digite a nota do 2º semestre"));
+
+        //pedir as faltas do 2 semestre 
+        faltas2 = parseFloat(prompt("digite a número do 2º semestre"));
+  
+
+        //calcular a media
+        media = (nota1  + nota2)/2; 
+        somaFaltas = faltas1 + faltas2;
+
+        if(mediantotas >= 60 && somaFaltas <= 20){
+            alert("parabéns, vc foi aprovado. Sua média foi " +mediaNotas + "e seu número de faltas foi " + somaFaltas);
+        }else{
+            alert("vc tem q estudar mais, vc foi reprovado. Sua média foi " + mediaNotas + somaFaltas);
+        }
+
+        //media para aprovação acima de 60 pontos
+
+        //faltas não podem ser maiores de 20 faltas
+</body>
+</html>

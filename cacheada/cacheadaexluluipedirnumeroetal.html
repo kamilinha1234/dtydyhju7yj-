@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declarar nossas variaveis 
+        var num1, num2;
+
+        //pedir um número
+        num1 = prompt(num1);
+
+        //usar parseInt
+        num1 = parseInt(num1);
+
+        //pedir outro número
+        num2 = prompt("digite o segundo numero");
+
+        //usar parseInt
+        num2 = parseInt(num2);
+
+        //somar os dois numeros
+
+        for(var i = num1; i <= num2; i++){
+        if(i%2==0) {
+            document.write(i+ "esse valor elevado ao quadrado é: " + i**2 + "<br>")
+        }
+        }
+    </script>
+
+</body>
+</html>

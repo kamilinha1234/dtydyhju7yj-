@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    num1 = prompt("jogador 1 digite um numero");
+    num1 = parseInt(num1);
+
+    num2 = prompt("jogador 2 digite um numero ");
+    num2 = parseInt(num2);
+
+    sorteio = parseInt(Math.rondom()*2)
+    alert("numero sorteado é " + sorteio)
+    if(Sorteio === 0){
+        if(num1 < num2){
+            alert("jogador 1 venceu!")
+        }else{
+            alert("jogador 2 venceu!")
+        }
+    }else{
+        if(sorteio === 1){
+            if(num1 > num2)
+            alert("jogador 1 venceu!")
+        }else{
+            alert("jogador 2 venceu!")
+        }
+    }
+    
+    </script>
+</body>
+</html>

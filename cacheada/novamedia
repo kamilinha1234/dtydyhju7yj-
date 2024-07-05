@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>operadores de computção</h1>
+    <!--mundo script-->
+    <script>
+        //declarar variaveis
+        var nota1, nota2, media
+
+        //pedir nota1
+        nota1 = parseFloat(prompt("digite a primeira nota"));
+
+        //pedir nota2
+        nota2 = parseFloat(prompt("digite a segunda nota"));
+        
+        //calcular a media
+        media = (nota1+nota2)/2;
+
+        //estrutura if (se)
+        if(media >=60){
+            alert("parabens, vc foi aprovado com media: " + media);
+        }else{
+            alert("nao foi desta vez, vc ficou retido com media: " + media);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>mostrar 1000 números</title>
+</body>
+    <h1>usando funções para gerar uma tabuada</h1>
+    <div id="saida"> <!--é onde vamos "printar" nosso resultado--></div>
+
+    <script>
+        function gerarTabuada(){
+            var saida = document.querySelector("#saida");
+            var mensagem = "";
+
+            for(var i  = 1; i<1000; i++){
+            mensagem = mensagem + "i:" + i + "<br>";
+        }
+        
+       }
+       saida.innerHTML = mensagem;
+
+       </script>
+       </html>

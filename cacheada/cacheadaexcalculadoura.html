@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçao usando void - retorna um valor</title>
+</head>
+<body>
+    
+    <!--vamos criar nossos botoes -->
+    <button onclick="soma()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">*</button>
+    <button onclick="div()">/</button>
+
+    <!--vamos criar nossa saida-->
+    <div id="saida"></div>
+
+    <!-- codigo script onde criaremos nossas funçoes -->
+    <script>
+        let n = parseInt(prompt("digite o valor inicial"));
+        let cont = "0" ;
+        let saida = document.querySelector("#saida");
+
+        //inserindo o valor inicial
+        saida.innerHTML = n;
+
+        //funçao SOMA
+        function soma(){ 
+        cont = parseFloat(prompt(" digite o valor para somar "));
+        n += cont;
+        saida.innerHTML = n;
+    }
+
+        //
+    </script>
+</body>
+</html>

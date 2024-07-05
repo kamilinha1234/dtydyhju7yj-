@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>o computador é ótimo para fazer operações repetitivas, e para 
+        que ele faça isso por nós, temos os laços repetição,
+        como por exemplo, o while, o do-wile e o famoso FOR."</p>
+        <p> vamos a prática</p>
+        <h1>vamos criar uma tabuada</h1>
+
+        <script>
+            var numero = prompt("digite um número para tabuada")
+            numero = parseInt(numero)
+
+            //no loop while e como todos os outros, precisamos definir um número inicial, neste caso vamos chamar de indice
+
+            var indice = 1;
+            //while = enquanto 
+            while(indice <=10){
+                //vamos usar o document.write para descrever na página
+                document.write(numero + "X" + indice + "=" + numero*indice + "<br>");
+                //devemos incrementar o indice de um a um 
+                indice = indice + 1; 
+            }
+            document.write("saiu do loop");
+        </script>
+</body>
+</html>

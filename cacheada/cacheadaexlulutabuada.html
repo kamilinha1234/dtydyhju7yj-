@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçao usando void - retorna um valor</title>
+</head>
+<body>
+    
+    <!--vamos criar nossos botoes -->
+    <button onclick="limpartabuada()">limpar tabuada</button>
+    <button onclick="gerartabuada()">gerar tabuada</button>
+
+    <!--vamos criar nossa saida-->
+    <div id="saida"></div>
+
+    <!-- codigo script onde criaremos nossas funçoes -->
+    <script>
+        function gerartabuada(){
+            //pedir um numero para a tabuada
+            let n = prompt("digite um numero para tabuada");
+
+            //transformar em number
+            n = parseInt(n);
+
+            let i = 1;
+            let mensagem = "";
+
+            //repetir os numeros
+            while(i < 100){
+                mensagem += n + "x" + i + "=" + (n*i) + "<br>";
+                i++;
+            }
+
+            saida.innerHTML = mensagem;
+        }
+
+        //criar a funçao para limpar a tabuada
+            function limpartabuada(){
+                mensagem = "";
+                saida.innerHTML = mensagem;
+            }
+    </script>
+</body>
+</html>
